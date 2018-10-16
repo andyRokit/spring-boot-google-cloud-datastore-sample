@@ -13,7 +13,10 @@ Prerequisities
 * Google Cloud account linked with `gcloud` and Google Cloud Datastore API enabled
 
 Running
-
+    
+    // Set environment variable GOOGLE_CLOUD_PROJECT to your GCP project ID
+    // See: https://github.com/googleapis/google-cloud-java/issues/2209
+    
     mvn appengine:run
 
 Deploying
