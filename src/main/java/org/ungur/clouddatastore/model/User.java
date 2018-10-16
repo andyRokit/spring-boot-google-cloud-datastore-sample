@@ -1,9 +1,8 @@
 package org.ungur.clouddatastore.model;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotBlank;
-
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class User {
@@ -15,10 +14,10 @@ public class User {
     @Email
     private String email;
 
-    @NotBlank
+    @NotEmpty
     private String password;
 
-    @NotBlank
+    @NotEmpty
     private String fullName;
 
     @NotNull

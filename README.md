@@ -1,7 +1,7 @@
 ### Google Cloud Datastore - Spring Boot Sample
 
 This sample uses Google Cloud Datastore Java SDK and Spring Boot to demonstrate how to
-interact with Google Cloud Datastore services.
+interact with Google Cloud Datastore services.  The services runs as Google App Engine (standard).
 
 It also uses Spring's `@Async` methods and includes Configuration class for `taskExecutor` bean.
 
@@ -14,12 +14,11 @@ Prerequisities
 
 Running
 
-    mvn spring-boot:run
+    mvn appengine:run
 
-Building
+Deploying
 
-    mvn clean package
-    java -jar target/clouddatastore-0.0.1-SNAPSHOT.jar
+    mvn appengine:deploy
 
 ### License
 
